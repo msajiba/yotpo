@@ -12,6 +12,13 @@ const TestimonialsPage = () => {
         async
         strategy="afterInteractive"
       />
+
+      <div className="border mt-20 p-5">
+        <div
+          className="yotpo-widget-instance"
+          data-yotpo-instance-id="1128681"
+        ></div>
+      </div>
     </div>
   );
 };
