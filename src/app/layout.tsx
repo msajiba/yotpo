@@ -28,6 +28,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <head>
+          <script
+            src="https://cdn-widgetsrepository.yotpo.com/v1/loader/ab6bOJ030BjsaF6hJcljgRka0CLDzfybzHAtNhuh"
+            async
+          ></script>
+        </head>
         <nav className="bg-gray-800 p-4">
           <ul className="flex space-x-6 text-white">
             <li>
