@@ -1,4 +1,4 @@
-import Script from "next/script";
+import YotpoWidget from "@/components/YotpoWidget";
 
 const TestimonialsPage = () => {
   return (
@@ -7,17 +7,13 @@ const TestimonialsPage = () => {
 
       <div id="yotpo-testimonials-custom-tab"></div>
 
-      <Script
-        src="//staticw2.yotpo.com/ab6bOJ030BjsaF6hJcljgRka0CLDzfybzHAtNhuh/widget.js"
-        async
-        strategy="afterInteractive"
-      />
+      <div
+        className="yotpo-widget-instance"
+        data-yotpo-instance-id="1128681"
+      ></div>
 
-      <div className="border mt-20 p-5">
-        <div
-          className="yotpo-widget-instance"
-          data-yotpo-instance-id="1128681"
-        ></div>
+      <div className="mt-20 border">
+        <YotpoWidget />
       </div>
     </div>
   );
