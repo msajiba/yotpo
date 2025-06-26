@@ -14,6 +14,7 @@ export async function createPost(formData: FormData) {
     await prisma.post.create({
       data: {
         title,
+        content: title + " content",
       },
     });
 
