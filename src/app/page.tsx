@@ -2,9 +2,7 @@ import React from "react";
 
 const homePage = async () => {
   const response = await fetch("https://yotpo.vercel.app/api/posts", {
-    next: {
-      revalidate: 60, // Revalidate every 60 seconds
-    },
+    next: { revalidate: 60 }, // Revalidate every 60 seconds
   });
 
   const data = await response.json();
